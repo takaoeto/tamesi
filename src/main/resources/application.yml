@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: bucketList_app
+  datasource:
+    enabled: false
+

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>情報入力</title>
+  </head>
+  <body>
+     名前を入力してください
+     <form th:action="@{/tamesi/receiveInfo}" th:object="${tamesiForm}" method="post">
+        <label>名前：</label>
+        <input type="text" th:field="*{name}">
+        <button>送信</button>
+     </form>
+  </body>
+</html>
